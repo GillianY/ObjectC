@@ -36,7 +36,7 @@ int main(int argc, const char * argv[]) {
     
     char t ; // 實際上是 8 bit 整數, 沒有byte 形態
     BOOL b =NO ; //別名,實際上是數字 0
-    BOOL a = YES; //實際上是 1 
+    BOOL a = YES; //實際上是 1
     
     
 //#ifndef DEBUG_TEST
@@ -77,7 +77,6 @@ int main(int argc, const char * argv[]) {
     printf("size of this struct %d \n",sizeof( struct _ttt)); //24 ,請直接用 sizeof 確認
     
     
-    
     //---STRUCT----
     struct _abcd {int a; int b; int c;};
     typedef struct _abcd aaa;
@@ -87,6 +86,22 @@ int main(int argc, const char * argv[]) {
     p->a=3;
     printf("a: %d \n",p->a);
     free(p);
+    
+    //---???????---//
+    aaa p2;
+    p2.a =3;
+    p2.b= 5;
+    printf("p2: %d , %d\n",p2.a,p2.b); //???
+    aaa p3;
+    p3.a =9;
+    p3.b= 10;
+    printf("p3: %d , %d\n",p3.a,p3.b);
+    //---???????---//
+    
+    struct _abcd bbb={1,2};
+    struct _abcd ccc; //why not dynamic ????
+    
+    
     
     //-----for array
     
@@ -116,10 +131,7 @@ int main(int argc, const char * argv[]) {
         printf("-- %d\n",arrayc[i]);
     }
 
-
    // for(int i in arrayc){ printf("%d \n", i);}  //error ,because array is not object
-    
-    
     return 0;
 }
 
