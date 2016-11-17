@@ -1,0 +1,4 @@
+void abc(void)
+{
+}
+//clang -o demo demo.m a.c //only warning
