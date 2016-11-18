@@ -102,7 +102,6 @@ int main(int argc, const char * argv[]) {
     struct _abcd ccc; //why not dynamic ????
     
     
-    
     //-----for array
     
     //靜態配置 ,只有靜態配置可以知道陣列長度
