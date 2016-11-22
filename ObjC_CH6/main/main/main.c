@@ -13,20 +13,33 @@
 
 int main(int argc, const char * argv[]) {
     
-        int result=0;
+        int result;
         int a =23;
         int b =19;
         add(&a,&b);
     
-        int *t = &a;
-        ++t;
+        printf ("%d + %d = %d\n",a,b,result);
     
-        printf ("%d + %d = %d\n",a,b,*t);
+        int c =0;
+        add2(a, b, &c);
+        printf ("%d + %d = %d\n",a,b,c);
+    
+        int *e;
+        e = malloc(sizeof(int)*5);
+    
+       // int d = add3(a,b);
+       // printf ("%d + %d = %d\n",a,b,d); 
+    
         return 0;
-  
+
     
-    
+//    int *t = &a;
+//    ++t;
 //    
+//    printf ("%d + %d = %d\n",a,b,*t);
+    
+    
+//
 //    //printf("Hello, World!\n");
 //    int result=0;
 //    int a =23;

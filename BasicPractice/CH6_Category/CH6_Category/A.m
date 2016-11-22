@@ -22,6 +22,11 @@
 {
     printf("Ciao Sabrina \n");
 }
+-(id)sayHi{
+    
+    NSString * str = @"Hello";
+    return str;
+}
 
 
 

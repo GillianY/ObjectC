@@ -24,5 +24,13 @@ int main(int argc, const char * argv[]) {
     
     [str sayHello]; //Category
     
+    NSString *greeting = [oa sayHi];
+    printf("%s  %lu\n", [greeting UTF8String],[str length]);
+    
+    int x =10;
+    int *ia; // c: array
+    ia = malloc(sizeof(int)*x);
+    
+    
     return 0;
 }
