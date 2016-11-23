@@ -20,11 +20,15 @@ int main(int argc, const char * argv[]) {
     B *ob2 = [[B alloc]init];
     oa.attr = ob1;
     oa.attr = ob2;
+    oa.xyz =ob1; //因為接下來馬上就release ob1 會有error // ？？？？怎麼辦
     
     
+
     [ob1 release];
     [ob2 release];
-    [oa release]; //r1
+    [oa release];
+
+     //r1
     
     return 0;
 }

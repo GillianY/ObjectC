@@ -14,6 +14,8 @@
 -(void)dealloc{
     [super dealloc]; //arc forbid  //ARC counting -> NO
     [attr release]; //r4
+    
+    [_xyz release];
     printf("A dealloc \n");
 }
 
