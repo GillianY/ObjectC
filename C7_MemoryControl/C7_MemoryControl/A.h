@@ -13,11 +13,12 @@
     B *attr;
 
 }
+@property (strong) B *xyz;
+//@property (strong) B *xyz;//-> relase _xyz; //strong :由A 本身確保它的存在
+//@property(copy) B *abc;  //-> relase _abc;
 
-@property(strong) B *xyz;//-> relase _xyz; //strong :由A 本身確保它的存在
-@property(copy) B *abc;  //-> relase _abc;
-
--(void)dealloc;
 -(void)setAttr:(B*)arg;
+
+//不要宣告  -(void)dealloc;
 
 @end

@@ -12,6 +12,6 @@
 {
     int k ;
 }
--(void)dealloc;
 
+//不要宣告  -(void)dealloc;
 @end

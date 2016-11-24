@@ -12,10 +12,10 @@
 @implementation A : NSObject
 
 -(void)dealloc{
-    [super dealloc]; //arc forbid  //ARC counting -> NO
+    [_xyz release]; //因 IDE 有問題  把[super dealloc]往後放
+                    //arc forbid  //ARC counting -> NO
     [attr release]; //r4
-    
-    [_xyz release];
+    [super dealloc];
     printf("A dealloc \n");
 }
 
