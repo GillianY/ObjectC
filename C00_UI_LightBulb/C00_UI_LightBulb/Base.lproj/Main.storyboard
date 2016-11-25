@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="imageoff" image="lightBulb_off.png" translatesAutoresizingMaskIntoConstraints="NO" id="To2-Em-5cB">
+                                <rect key="frame" x="158" y="20" width="285" height="372"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="slider1" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="7RJ-Zk-9pb">
+                                <rect key="frame" x="87" y="435" width="426" height="31"/>
+                            </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" restorationIdentifier="switch1" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wsA-Gr-KrZ">
+                                <rect key="frame" x="267" y="495" width="51" height="31"/>
+                            </switch>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" restorationIdentifier="imageon" image="lightBulb_on.png" translatesAutoresizingMaskIntoConstraints="NO" id="o4L-vH-gZj">
+                                <rect key="frame" x="158" y="20" width="285" height="372"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wsA-Gr-KrZ" firstAttribute="top" secondItem="7RJ-Zk-9pb" secondAttribute="bottom" constant="30" id="D1E-rY-21r"/>
+                            <constraint firstItem="7RJ-Zk-9pb" firstAttribute="top" secondItem="To2-Em-5cB" secondAttribute="bottom" constant="30" id="L23-k0-tcY"/>
+                            <constraint firstItem="o4L-vH-gZj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WFc-p4-lh6"/>
+                            <constraint firstItem="7RJ-Zk-9pb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mNZ-Ad-GdP"/>
+                            <constraint firstItem="wsA-Gr-KrZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="skc-IY-mLF"/>
+                            <constraint firstItem="To2-Em-5cB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tqf-1C-w9p"/>
+                            <constraint firstItem="To2-Em-5cB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="xG5-gp-upw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="363"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lightBulb_off.png" width="456" height="608"/>
+        <image name="lightBulb_on.png" width="456" height="608"/>
+    </resources>
+</document>
